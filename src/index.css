@@ -1,0 +1,105 @@
+body {
+ 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.container{
+  margin:20px auto;
+  padding:5px ;
+  border:solid 2px black;
+  
+  display:flex;
+  justify-content: space-around;
+}
+
+.default-button{
+ 
+ border:solid 2px black;
+ margin-top:2vh;
+ border-radius: 10px;
+ display:block;
+ padding:10px;
+ width:20vw;
+ height:5vh;
+ transition:.1s ;
+}
+
+.default-button:active{
+  border:solid 1px rgb(90, 88, 88);
+  height:4vh;
+ }
+ 
+ .task{
+  border:solid 3px white;
+   color:black
+ }
+input {
+  padding:20px;
+  margin:.5vh;
+  border-radius: 10px;
+  border:dotted 2px black;
+  width:50vw;
+  transition: .1s;
+  outline: none;
+}
+
+input:focus{
+  transition: 1s;
+ 
+  border-radius: 10px;
+  border:solid 3px black;
+  width:50vw
+}
+
+.form-active{
+ opacity:1;
+
+ text-align: center;
+ background-color: rgb(241, 240, 240);
+}
+
+
+ .form-hidden{
+  opacity:0;
+  transition: 1s;
+  text-align: center;
+  background-color: rgb(241, 240, 240);
+ }
+ 
+
+.Tasks {
+  border:dotted 2px black;
+  transition: .5s;
+  margin:10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+ 
+}
+.form-hidden{
+  height:0vh;
+  transition: .5s ease-out;
+  padding:0px;
+  text-align: center;
+}
+
+.form-active{
+  height:20vh;
+  transition: .5s ease-in;
+  text-align: center;
+}
+
+.form > Button{
+ background-color: white;
+ margin:10px;
+ margin-left:40vw
+}
